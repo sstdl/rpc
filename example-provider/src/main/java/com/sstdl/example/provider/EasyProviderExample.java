@@ -7,7 +7,7 @@ import com.sstdl.example.rpc.server.VertxHttpServer;
 
 /**
  * @author SSTDL
- * @description
+ * @description 提供者启动类
  */
 public class EasyProviderExample {
     public static void main(String[] args) {

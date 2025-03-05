@@ -15,7 +15,7 @@ import java.lang.reflect.Method;
 
 /**
  * @author SSTDL
- * @description
+ * @description HTTP 请求处理
  */
 // 不同的 web 服务器对应的请求处理器实现方式不同，Vert.x 中是通过实现 Handler<HttpServerRequest> 接口来自定义请求处理器的
 public class HttpServerHandler implements Handler<HttpServerRequest> {

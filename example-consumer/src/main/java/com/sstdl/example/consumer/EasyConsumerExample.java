@@ -2,17 +2,18 @@ package com.sstdl.example.consumer;
 
 import com.sstdl.example.common.model.User;
 import com.sstdl.example.common.service.UserService;
+import com.sstdl.example.rpc.proxy.ServiceProxyFactory;
 
 /**
  * @author SSTDL
- * @description
+ * @description 消费者启动类
  */
 public class EasyConsumerExample {
     public static void main(String[] args) {
-        // todo 需要获取 UserService 的实现类对象
-        UserService userService = null;
+        // 动态代理
+        UserService userService = ServiceProxyFactory.getProxy(UserService.class);
         User user = new User();
-        user.setName("yupi");
+        user.setName("sstdl");
         // 调用
         User newUser = userService.getUser(user);
         if (newUser != null) {

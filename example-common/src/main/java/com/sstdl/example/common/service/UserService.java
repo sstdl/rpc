@@ -4,7 +4,7 @@ import com.sstdl.example.common.model.User;
 
 /**
  * @author SSTDL
- * @description
+ * @description 用户服务接口
  */
 public interface UserService {
     /**

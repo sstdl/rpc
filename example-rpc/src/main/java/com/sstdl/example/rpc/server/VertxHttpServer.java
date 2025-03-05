@@ -4,7 +4,7 @@ import io.vertx.core.Vertx;
 
 /**
  * @author SSTDL
- * @description Vert.x
+ * @description Vertx HTTP 服务器
  */
 public class VertxHttpServer implements HttpServer{
     @Override
